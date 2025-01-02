@@ -1,0 +1,53 @@
+@use "./config/variaveis.scss";
+
+.hero {
+    display: flex;
+
+    .hero_text {
+
+        padding: 20px;
+        margin-left: 60px;
+
+        .title--big {
+            margin: 10px 0 40px;
+        }
+    }
+
+    .hero_image {
+        width: 100%;
+        margin-bottom: -4px;
+    }
+
+    @media (max-width: 1024px) {
+        display: block;
+
+        .hero_image {
+            width: 80%;
+            margin-bottom: -4px;
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+
+    @media (max-width: 450px) {
+        .hero_image {
+            display: none;
+
+            
+        }
+
+        .hero_text {
+        width: 100%;
+        padding: 20px;
+        margin-left: 60px;
+        display: block;
+        margin-bottom: 60px;
+
+            .title--big {
+                margin: 10px 0 40px;
+            }
+        }
+    }
+}

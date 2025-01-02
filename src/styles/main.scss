@@ -1,0 +1,29 @@
+@use "./config/reset.scss";
+@use "./config/variaveis.scss";
+@use "./hero";
+@use "./bar";
+@use "./about";
+@use "./footer";
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img-bg/bg-balanca.jpg);
+    background-size: cover;
+    background-position: center;
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.title--big {
+    font-size: 40px;
+    color: variaveis.$colorPrincipal;
+}
+
+.title {
+    font-size: 32px;
+    color: variaveis.$colorPrincipal;
+}
+
+.text {
+    font-size: 18px;
+    color: variaveis.$colorPrincipal;
+}

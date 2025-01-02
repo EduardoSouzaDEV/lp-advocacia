@@ -1,0 +1,241 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+
+.hero {
+  display: flex;
+}
+.hero .hero_text {
+  padding: 20px;
+  margin-left: 60px;
+}
+.hero .hero_text .title--big {
+  margin: 10px 0 40px;
+}
+.hero .hero_image {
+  width: 100%;
+  margin-bottom: -4px;
+}
+@media (max-width: 1024px) {
+  .hero {
+    display: block;
+  }
+  .hero .hero_image {
+    width: 80%;
+    margin-bottom: -4px;
+  }
+  .hero .hero_image img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 450px) {
+  .hero .hero_image {
+    display: none;
+  }
+  .hero .hero_text {
+    width: 100%;
+    padding: 20px;
+    margin-left: 60px;
+    display: block;
+    margin-bottom: 60px;
+  }
+  .hero .hero_text .title--big {
+    margin: 10px 0 40px;
+  }
+}
+
+.bar {
+  background-color: #FA983A;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+@media (max-width: 450px) {
+  .bar {
+    width: 100%;
+  }
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about .title {
+  margin: 60px 0;
+}
+.about .card {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 120px;
+}
+.about .card .item {
+  position: relative;
+  width: 300px;
+  height: 400px;
+}
+.about .card .item .image_container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #485460;
+  border-radius: 20px;
+}
+.about .card .item .image_container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about .card .item .image_container p {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Fundo semitransparente */
+  border-radius: 5px;
+  width: 90%;
+}
+.about .info {
+  display: flex;
+  padding: 20px;
+}
+.about .info .info_image {
+  margin: 40px 50px 50px 30px;
+  height: 400px;
+  width: 800px;
+}
+.about .info .info_image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+.about .info .info_text {
+  text-align: center;
+  padding: 40px;
+}
+.about .info .info_text .title {
+  margin-bottom: 70px;
+  margin-top: -7px;
+}
+.about .info .info_text .text1 {
+  margin-bottom: 60px;
+}
+@media (max-width: 1024px) {
+  .about {
+    width: 100%;
+    padding: 20px;
+  }
+  .about .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 120px;
+  }
+  .about .card .item {
+    position: relative;
+    width: 100%;
+    height: 400px;
+  }
+  .about .info {
+    text-align: center;
+    display: block;
+    padding: 10px;
+    max-width: 100%;
+  }
+  .about .info .info_image {
+    width: 80%;
+  }
+  .about .info .info_image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+  }
+}
+@media (max-width: 450px) {
+  .about .card {
+    display: block;
+    gap: 0;
+    margin-bottom: 20px;
+  }
+  .about .card .item {
+    margin-bottom: 50px;
+  }
+  .about .info {
+    display: block;
+    padding: 10px;
+  }
+  .about .info .info_image {
+    width: 90%;
+  }
+  .about .info .info_image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+  }
+}
+
+.footer {
+  background-color: #FA983A;
+  display: flex;
+  padding: 30px 20px;
+  gap: 30px;
+}
+.footer .footer_button .button {
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 40px;
+  margin-top: 5px;
+  cursor: pointer;
+  background-color: #485460;
+}
+.footer .footer_button .button:hover {
+  background-color: #fff;
+  color: black;
+}
+@media (max-width: 450px) {
+  .footer {
+    display: block;
+  }
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img-bg/bg-balanca.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.title--big {
+  font-size: 40px;
+  color: #FA983A;
+}
+
+.title {
+  font-size: 32px;
+  color: #FA983A;
+}
+
+.text {
+  font-size: 18px;
+  color: #FA983A;
+}
+
+/*# sourceMappingURL=main.css.map */
