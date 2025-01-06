@@ -84,8 +84,10 @@
   position: relative;
   width: 300px;
   height: 400px;
+  padding: 20px;
 }
 .about .card .item .image_container {
+  transition: transform, 0.3s ease;
   position: relative;
   width: 100%;
   height: 100%;
@@ -111,6 +113,9 @@
   /* Fundo semitransparente */
   border-radius: 5px;
   width: 90%;
+}
+.about .card .item .image_container:hover {
+  transform: scale(1.2);
 }
 .about .info {
   display: flex;
@@ -162,8 +167,10 @@
   }
   .about .info .info_image {
     width: 80%;
+    margin: 0 auto;
   }
   .about .info .info_image img {
+    max-width: 450px;
     height: 100%;
     width: 100%;
     border-radius: 20px;
@@ -236,6 +243,40 @@ body {
 .text {
   font-size: 18px;
   color: #FA983A;
+}
+
+.scale-up-bottom {
+  -webkit-animation: scale-up-bottom 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-bottom 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes scale-up-bottom {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+  }
+}
+@keyframes scale-up-bottom {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
